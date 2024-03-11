@@ -1,0 +1,45 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "name": "Project Root"
+        },
+        {
+            "path": "conf"
+        },
+        {
+            "path": "google"
+        }
+    ],
+    "settings": {
+        "jupyter.jupyterCommandLineArguments": [
+
+        ],
+        "python.envFile": "${workspaceFolder}/.venv",
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+        "terminal.integrated.env.osx": {
+            "JUPYTER_PATH": "${workspaceFolder}",
+            "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/examples:${workspaceFolder}/third_party:${env:PYTHONPATH}",
+            "CLOUDSDK_PYTHON": "${workspaceFolder}/.venv/bin/python",
+            "jupyter.PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+        },
+        "terminal.integrated.env.linux": {
+            "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/examples:${workspaceFolder}/third_party:${env:PYTHONPATH}",
+            "CLOUDSDK_PYTHON": "${workspaceFolder}/.venv/bin/python",
+            "jupyter.PYTHONPATH": "${workspaceFolder}:${env:PYTHONPATH}"
+        },
+        "terminal.integrated.env.windows": {
+            "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/examples;${workspaceFolder}/third_party;${env:PYTHONPATH}",
+            "CLOUDSDK_PYTHON": "${workspaceFolder}/.venv/bin/python",
+            "jupyter.PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}"
+        }
+    },
+    "extensions": {
+        "recommendations": [
+            "bazel.build",
+            "microsoft.vscode-jupyter",
+            "microsfot.python",
+            "microsoft.intellicode"
+        ]
+    },
+}
